@@ -1,0 +1,14 @@
+<template>
+    <c-personal-info onupdatepi = {handleUpdatePI}></c-personal-info>
+    <c-education-details onupdateeducation ={handleUpdateEducation}></c-education-details>
+    <c-work-experience onupdateworkexp = {handleWorkExp}></c-work-experience>
+    <c-skills onupdateskill ={handleUpdateSkills}></c-skills>
+    <c-summary onupdatesummary ={handleUpdateSummary}></c-summary>
+    <c-preview-resume 
+    personalinfo = {PersonalInfo}
+    summary = {summary}
+    skills = {skills}
+    educations = {educations}
+    work-experiences = {workExperiences}
+    ></c-preview-resume>
+</template>
